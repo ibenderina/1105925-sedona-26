@@ -113,12 +113,16 @@
                 </div>
                 <div class="booking__input-style">
                   <label for="adult">Взрослые:</label>
-                  <div class="booking__input-adult">
-                    <input type="number" name="adult" id="adult" placeholder="2" min="0">
+                  <div class="booking__input-number">
+                    <button class="booking__input-number-minus" type="button"> - </button><!--
+                 --><input class="input-number-count" name="adult" id="adult" type="number" value="2" min="0"><!--
+                 --><button class="booking__input-number-plus" type="button"> + </button>
                   </div>
-                  <label for="children">Дети:</label>
-                  <div class="booking__input-children">
-                    <input type="number" name="children" id="children" placeholder="0" min="0">
+                  <label class="booking__input-style--children" for="children">Дети:</label>
+                  <div class="booking__input-number">
+                    <button class="booking__input-number-minus" type="button"> - </button><!--
+                 --><input class="input-number-count" name="children" id="children" type="number" value="0" min="0"><!--
+                 --><button class="booking__input-number-plus" type="button"> + </button>
                   </div>
                 </div>
                 <button class="booking__button-style" type="button">Найти</button>
