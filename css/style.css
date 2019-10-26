@@ -387,9 +387,13 @@ body {
   padding-bottom: 33px;
 }
 
-.booking__input-style input[type="date"] {
+.booking__input-style input[type="text"] {
   padding: 6px 13px;
   width: 317px;
+}
+
+.booking__input-style input[type="text"]::placeholder {
+  color: #000000;
 }
 
 .booking__input-style:nth-child(1)::before,
@@ -413,11 +417,6 @@ body {
 .booking__input-style:nth-child(1):active::before,
 .booking__input-style:nth-child(2):active::before {
   background-image: url(../img/calendar--active.svg);
-}
-
-.booking__input-style input[type=date]::-webkit-calendar-picker-indicator {
-  -webkit-appearance: none;
-  display: none;
 }
 
 .booking__input-style input[type="number"] {
@@ -1165,7 +1164,7 @@ body {
   text-decoration: none;
 }
 
-.footer__menu-link--developer label {
+.footer__menu-link--developer span {
   line-height: 46px;
   padding-right: 4px;
   vertical-align: top;
