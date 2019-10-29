@@ -14,13 +14,13 @@
           <ul class="header__menu">
             <li class="header__menu-item"><a class="header__menu-link" href="">Информация</a></li>
             <li class="header__menu-item"><a class="header__menu-link" href="">Фото и видео</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="">Карта штата</a></li>
-            <li class="header__menu-item"><a class="header__menu-link header__menu-link--active" href="">Гостиницы</a></li>
           </ul>
-          <div class="header__logo">
-            <a class="header__logo-link" href="index.html" aria-label="Логотип сайта"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта">
-            </a>
-          </div>
+          <ul class="header__menu">
+            <li class="header__menu-item"><a class="header__menu-link" href="">Карта штата</a></li>
+            <li class="header__menu-item"><a class="header__menu-link header__menu-link--active" href="hotels.html">Гостиницы</a></li>
+          </ul>
+          <a class="header__logo-link" href="index.html" aria-label="Логотип сайта"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта">
+          </a>
         </nav>
       </header>
       <section class="searching__form-options">
@@ -38,7 +38,7 @@
             </fieldset>
             <fieldset class="form-options-field">
               <legend class="form-options">Тип жилья:</legend>
-              <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="placement1" id="placement1" checked>
+              <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="placement1" id="placement1" checked disabled>
               <label for="placement1">Гостиница</label>
               <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="placement2" id="placement2" checked>
               <label for="placement2">Мотель</label>
@@ -74,7 +74,7 @@
           </ul>
           <div class="hotels__results-sort-elements">
             <a class="hotels__results-sort-left" href="" aria-label="Сортировка по возрастанию"></a>
-            <a class="hotels__results-sort-right" href="" aria-label="Сортировка по убыванию"></a>
+            <a class="hotels__results-sort-right hotels__results-sort-right--active" href="" aria-label="Сортировка по убыванию"></a>
           </div>
         </div>
         <h2 class="visually-hidden">Список отелей по вашему запросу</h2>
@@ -82,7 +82,7 @@
           <div class="hotels__results-list-block">
             <img src="img/hotel1.jpg" width="135" height="90" alt="Amara Resort & Spa">
             <div class="results-hotel__info">
-              <h3>Amara Resort & Spa</h3>
+              <h3 class="results-hotel__info-header">Amara Resort & Spa</h3>
               <div class="results-hotel__info--table">
                 <span class="results-hotel__info-placement">Гостиница</span>
                 <span class="results-hotel__info-cost">От 4000 Р.</span>
@@ -104,7 +104,7 @@
           <div class="hotels__results-list-block">
             <img src="img/hotel2.jpg" width="135" height="90" alt="Desert Quail Inn">
             <div class="results-hotel__info">
-              <h3>Desert Quail Inn</h3>
+              <h3 class="results-hotel__info-header">Desert Quail Inn</h3>
               <div class="results-hotel__info--table">
                 <span class="results-hotel__info-placement">Мотель</span>
                 <span class="results-hotel__info-cost">От 3000 Р.</span>
@@ -126,7 +126,7 @@
           <div class="hotels__results-list-block">
             <img src="img/hotel3.jpg" width="135" height="90" alt="Villas at Poco Diablo">
             <div class="results-hotel__info">
-              <h3>Villas at Poco Diablo</h3>
+              <h3 class="results-hotel__info-header">Villas at Poco Diablo</h3>
               <div class="results-hotel__info--table">
                 <span class="results-hotel__info-placement">Апартаменты</span>
                 <span class="results-hotel__info-cost">От 2000 Р.</span>
@@ -147,7 +147,6 @@
       <footer class="footer">
         <div class="footer__menu">
           <a class="footer__menu-link footer__menu-link--tag" href="">#visitSEDONA</a>
-          <h4 class="visually-hidden">Мы в соцсетях</h4>
           <ul class="footer__menu-social-links">
             <li class="footer__menu-social-links--style">
               <a class="twitter" href="" aria-label="Перейти в Твиттер"></a>
