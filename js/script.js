@@ -11,7 +11,7 @@ function countPlus(n) {
 function initInputNumber(inputNumber) {
   var inputMinus = inputNumber.querySelector(".booking__input-number-minus");
   var inputPlus = inputNumber.querySelector(".booking__input-number-plus");
-  var numberCount = inputNumber.querySelector(".input-number-count");
+  var numberCount = inputNumber.querySelector(".booking__input-number-count");
 
   inputMinus.addEventListener("click", function() {
     countMinus(numberCount);

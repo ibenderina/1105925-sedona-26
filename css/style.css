@@ -16,8 +16,7 @@ body {
 .benefits__list-first,
 .benefits__list-second,
 .footer__menu,
-.footer__menu-social-links,
-.hotels__results-sort-list {
+.footer__menu-social-links {
   list-style-type: none;
 }
 
@@ -373,7 +372,7 @@ body {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
-  padding-bottom: 118px;
+  padding-bottom: 132px;
 
   font-size: 14px;
   font-weight: 400;
@@ -406,7 +405,7 @@ body {
   position: absolute;
   max-width: 568px;
   padding: 0;
-  top: 27%;
+  top: 201px;
   right: 316px;
 }
 
@@ -475,54 +474,37 @@ body {
   opacity: 0;
 }
 
-.booking__form-contain input {
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
 .booking__input-style {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-bottom: 31px;
 }
 
 .booking__input-style:nth-child(2) {
-  padding-bottom: 33px;
+  padding-bottom: 28px;
 }
 
-.booking__input-style input[type="text"] {
+.booking__input-style:nth-child(3) {
+  padding-bottom: 3px;
+}
+
+.booking__input-style-text {
   padding: 9px 13px;
   width: 314px;
 }
 
-.booking__input-style input[type="text"]::-webkit-input-placeholder {
+.booking__input-style-text::placeholder {
   color: #000000;
-}
-
-.booking__input-style input[type="text"]::-moz-placeholder {
-  color: #000000;
-}
-
-.booking__input-style input[type="text"]:-ms-input-placeholder {
-  color: #000000;
-}
-
-.booking__input-style input[type="text"]::-ms-input-placeholder {
-  color: #000000;
-}
-
-.booking__input-style input[type="text"]::placeholder {
-  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .booking__input-style-button {
   position: absolute;
   content: "";
   right: 14px;
-  top: 6px;
+  top: 8px;
   width: 21px;
   height: 22px;
   border: none;
@@ -531,6 +513,7 @@ body {
   background-image: url(../img/calendar.svg);
   background-repeat: no-repeat;
   background-color: transparent;
+  outline: none;
 }
 
 .booking__input-style-button:hover {
@@ -543,78 +526,94 @@ body {
   background-color: #f2f2f2;
 }
 
-.booking__input-style input[type="number"] {
-  width: 38px;
-  height: 35px;
-
-  -moz-appearance: textfield;
-  text-align: center;
-
-  border: none;
-  border-bottom: 1px solid #f2f2f2;
-}
-
-.booking__input-style input::-webkit-outer-spin-button,
-.booking__input-style input::-webkit-inner-spin-button {
-  /* display: none; <- Crashes Chrome on hover */
+.booking__input-style-text::-webkit-outer-spin-button,
+.booking__input-style-text::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+  margin: 0;
 }
 
-.booking__input-style input {
+.booking__input-style-text {
   background-color: #f2f2f2;
   border: solid 2px #f2f2f2;
+  outline: none;
 }
 
-.booking__input-style input:hover {
+.booking__input-style-text:hover {
   background-color: #ebebeb;
   border: solid 2px #ebebeb;
 }
 
-.booking__input-style input:active {
+.booking__input-style-text:active {
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
 }
 
-.booking__input-style:nth-child(3) input:hover {
-  border: none;
-  border-bottom: 1px solid #ebebeb;
-}
-
-.booking__input-style:nth-child(3) input:active {
-  border: none;
-  border-bottom: 1px solid #ffffff;
-}
-
-.booking__input-style label {
-  padding-right: 26px;
+.booking__input-style-arrive {
+  padding-right: 24px;
   line-height: 35px;
 }
 
-.booking__input-style:nth-child(2) label {
-  padding-right: 22px;
+.booking__input-style-leave {
+  padding-right: 20px;
+  margin-top: 10px;
 }
 
-.booking__input-style:nth-child(3) label {
-  padding-right: 39px;
+.booking__input-style-adult {
+  padding-right: 40px;
+  margin-top: 12px;
 }
 
-.booking__input-style--children {
-  padding-left: 39px;
+.booking__input-style-children {
+  margin-top: 12px;
+  padding-left: 53px;
+  padding-right: 27px;
+}
+
+.booking__input-number {
+  display: flex;
+}
+
+.booking__input-number-count {
+  -moz-appearance:textfield;
+}
+
+.booking__input-number-count::-webkit-outer-spin-button,
+.booking__input-number-count::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.booking__input-number-count {
+  height: 38px;
+  width: 38px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 14px;
+  font-weight: 700;
+  text-align: center;
+
+  border: none;
+  outline: none;
+  background-color: #f2f2f2;
 }
 
 .booking__input-number-minus,
 .booking__input-number-plus {
-  width: 38px;
   height: 38px;
+  width: 38px;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
 
-  color: rgba(0, 0, 0, 0.3);
-  text-align: center;
-  font-size: 18px;
-  font-weight: 700;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #a9a9a9;
 
   background-color: #f2f2f2;
-  border: 1px solid transparent;
+  border: none;
+  outline: none;
 }
 
 .booking__input-number-minus:hover,
@@ -643,6 +642,7 @@ body {
   border: 2px solid #ffffff;
   border-radius: 2px;
   cursor: pointer;
+  outline: none;
 }
 
 .booking__form-button:hover {
@@ -656,14 +656,16 @@ body {
 
 .booking__button-style {
   padding: 17px 196px;
-  margin: 20px 0;
+  margin: 21px 0;
 
   font-size: 21px;
   font-weight: 700;
   text-transform: uppercase;
   color: #ffffff;
 
+  border: none;
   background-color: #81b3d2;
+  outline: none;
 }
 
 .booking__button-style:hover {
@@ -676,8 +678,8 @@ body {
 }
 
 .searching__form-options {
-  min-height: 190px;
-  padding: 28px 59px 1px 72px;
+  min-height: 188px;
+  padding: 26px 59px 1px 72px;
 
   color: #ffffff;
 
@@ -898,11 +900,15 @@ body {
   background-color: #ffffff;
 }
 
+.hotels__results {
+  margin-bottom: 5px;
+}
+
 .hotels__results-sort {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 29px 0;
+  padding: 31px 0;
 }
 
 .hotels__results-sort-list {
@@ -1277,7 +1283,7 @@ body {
   display: inline-flex;
   padding: 0;
   margin: 0;
-  margin-left: 38px;
+  margin-left: 25px;
   height: 46px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -1304,7 +1310,7 @@ body {
   display: block;
   background-position: center;
   background-repeat: no-repeat;
-  height: 46px;
+  height: 49px;
   width: 46px;
   opacity: 1;
 }

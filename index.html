@@ -95,28 +95,28 @@
               <button class="booking__form-button" type="button">Поиск гостиницы в Седоне</button>
               <div class="booking__form-contain">
                 <div class="booking__input-style">
-                  <label for="dateOfArrive">Дата заезда:</label>
-                  <input type="text" name="dateOfArrive" id="dateOfArrive" placeholder="24 апреля 2017">
+                  <label class="booking__input-style-arrive" for="dateOfArrive">Дата заезда:</label>
+                  <input class="booking__input-style-text" type="text" name="dateOfArrive" id="dateOfArrive" placeholder="24 апреля 2017">
                   <button class="booking__input-style-button" type="submit"></button>
                 </div>
                 <div class="booking__input-style">
-                  <label for="dateOfLeave">Дата выезда:</label>
-                  <input type="text" name="dateOfLeave" id="dateOfLeave" placeholder="4 июля 2017">
+                  <label class="booking__input-style-leave" for="dateOfLeave">Дата выезда:</label>
+                  <input class="booking__input-style-text" type="text" name="dateOfLeave" id="dateOfLeave" placeholder="4 июля 2017">
                   <button class="booking__input-style-button" type="submit"></button>
                 </div>
                 <div class="booking__input-style">
-                  <label for="adult">Взрослые:</label>
-                  <div class="booking__input-number">
-                    <button class="booking__input-number-minus" type="button"> - </button><!--
-                 --><input class="input-number-count" name="adult" id="adult" type="number" value="2" min="0"><!--
-                 --><button class="booking__input-number-plus" type="button"> + </button>
-                  </div>
-                  <label class="booking__input-style--children" for="children">Дети:</label>
-                  <div class="booking__input-number">
-                    <button class="booking__input-number-minus" type="button"> - </button><!--
-                 --><input class="input-number-count" name="children" id="children" type="number" value="0" min="0"><!--
-                 --><button class="booking__input-number-plus" type="button"> + </button>
-                  </div>
+                    <label class="booking__input-style-adult" for="adult">Взрослые:</label>
+                    <div class="booking__input-number">
+                      <button class="booking__input-number-minus" type="button">−</button>
+                      <input class="booking__input-number-count" name="adult" id="adult" type="number" value="2" min="0">
+                      <button class="booking__input-number-plus" type="button">+</button>
+                    </div>
+                    <label class="booking__input-style-children" for="children">Дети:</label>
+                    <div class="booking__input-number">
+                      <button class="booking__input-number-minus" type="button">−</button>
+                      <input class="booking__input-number-count" name="children" id="children" type="number" value="0" min="0">
+                      <button class="booking__input-number-plus" type="button">+</button>
+                    </div>
                 </div>
                 <button class="booking__button-style" type="submit">Найти</button>
               </div>
