@@ -24,7 +24,7 @@
         </nav>
       </header>
       <main>
-      <section class="main__welcome">
+        <section class="main__welcome">
           <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
           <div class="main__welcome-title">
             <img src="img/main__welcome-title.svg" width="459" height="353" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks">
@@ -105,18 +105,18 @@
                   <button class="booking__input-style-button" type="submit"></button>
                 </div>
                 <div class="booking__input-style">
-                    <label class="booking__input-style-adult" for="adult">Взрослые:</label>
-                    <div class="booking__input-number">
-                      <button class="booking__input-number-minus" type="button">−</button>
-                      <input class="booking__input-number-count" name="adult" id="adult" type="number" value="2" min="0">
-                      <button class="booking__input-number-plus" type="button">+</button>
-                    </div>
-                    <label class="booking__input-style-children" for="children">Дети:</label>
-                    <div class="booking__input-number">
-                      <button class="booking__input-number-minus" type="button">−</button>
-                      <input class="booking__input-number-count" name="children" id="children" type="number" value="0" min="0">
-                      <button class="booking__input-number-plus" type="button">+</button>
-                    </div>
+                  <label class="booking__input-style-adult" for="adult">Взрослые:</label>
+                  <div class="booking__input-number">
+                    <button class="booking__input-number-minus" type="button" aria-label="Уменьшить количество взрослых">−</button>
+                    <input class="booking__input-number-count" name="adult" id="adult" type="number" value="2" min="0">
+                    <button class="booking__input-number-plus" type="button" aria-label="Увеличить количество взрослых">+</button>
+                  </div>
+                  <label class="booking__input-style-children" for="children">Дети:</label>
+                  <div class="booking__input-number">
+                    <button class="booking__input-number-minus" type="button" aria-label="Уменьшить количество детей">−</button>
+                    <input class="booking__input-number-count" name="children" id="children" type="number" value="0" min="0">
+                    <button class="booking__input-number-plus" type="button" aria-label="Увеличить количество детей">+</button>
+                  </div>
                 </div>
                 <button class="booking__button-style" type="submit">Найти</button>
               </div>
