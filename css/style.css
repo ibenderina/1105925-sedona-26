@@ -1122,10 +1122,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 450px;
+  width: 426px;
+}
+
+.hotels__results-list-block img {
+  margin-right: 30px;
 }
 
 .hotels__results-list--border {
