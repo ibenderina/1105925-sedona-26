@@ -129,6 +129,7 @@ body {
   background-image: url(../img/polygon.svg);
   background-repeat: no-repeat;
   background-position: bottom;
+  background-size: 100% 57px;
 }
 
 .main__welcome-title img {
@@ -218,6 +219,7 @@ body {
 
 .benefits__row--img {
   width: 800px;
+  min-height: 256px;
   -webkit-box-flex: 2;
       -ms-flex-positive: 2;
           flex-grow: 2;
@@ -226,7 +228,7 @@ body {
 
   background-color: #8d716a;
   background-image: url(../img/benefits__list-item2.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -880,7 +882,7 @@ body {
   padding-left: 56px;
 
   text-align: center;
-  line-height: 31px;
+  line-height: 30px;
 }
 
 .searching__form-range-price input {
