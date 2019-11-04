@@ -38,35 +38,35 @@ body {
 }
 
 .header__menu {
-  width: 50%;
-  padding: 0;
+  width: 100%;
+  padding: 0 62px;
   margin: 0;
   min-height: 56px;
   background-color: #ffffff;
 }
 
-.header__menu:first-of-type {
+.header__menu-item {
+  display: inline-block;
+  padding: 20px 9px;
+  width: 213px;
+
+  vertical-align: middle;
+  white-space: nowrap;
   text-align: left;
 }
 
-.header__menu:last-of-type {
+.header__menu-item--align-right {
   text-align: right;
 }
 
-.header__menu-item {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 20px 72px 0 71px;
-
-  white-space: nowrap;
+.header__menu-item--center {
+  margin-right: 62px;
+  margin-left: 6px;
 }
 
-.header__menu-item-left {
-  padding-right: 73px;
-}
-
-.header__menu-item-right {
-  padding-left: 89px;
+  .header__menu-item--center:nth-child(odd) {
+  margin-left: 62px;
+  margin-right: 6px;
 }
 
 .header__menu-link {
@@ -509,6 +509,11 @@ body {
 .booking__input-style-text {
   padding: 9px 13px;
   width: 314px;
+
+  color: #000000;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .booking__input-style-text::-webkit-input-placeholder {
@@ -799,6 +804,10 @@ body {
   border-right: 4px solid transparent;
 }
 
+.form-options-checkbox:focus + label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+
 .form-options-checkbox:disabled + label::before {
   color: #000000;
   opacity: 0.4;
@@ -920,7 +929,8 @@ body {
   cursor: pointer;
 }
 
-.searching__form-range-button:hover {
+.searching__form-range-button:hover,
+.searching__form-range-button:focus {
   border: 9px solid #ffffff;
 }
 
@@ -951,7 +961,8 @@ body {
   outline: none;
 }
 
-.searching__form-button:hover {
+.searching__form-button:hover,
+.searching__form-button:focus {
   color: #000000;
   background-color: #ffffff;
 }
@@ -1033,6 +1044,10 @@ body {
 .results-sort-link:focus {
   color: #000000;
   border: none;
+}
+
+.results-sort-link:focus {
+  outline: -webkit-focus-ring-color auto 5px;
 }
 
 .results-sort-link--active {

@@ -5,19 +5,17 @@
     <title>Седона — небольшой городок в Аризоне, заслуживающий большего!</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <div class="container__background">
       <header class="header">
         <nav class="header__nav">
           <ul class="header__menu">
-            <li class="header__menu-item header__menu-item-left"><a class="header__menu-link" href="">Информация</a></li>
-            <li class="header__menu-item"><a class="header__menu-link" href="">Фото и видео</a></li>
-          </ul>
-          <ul class="header__menu">
-            <li class="header__menu-item"><a class="header__menu-link" href="">Карта штата</a></li>
-            <li class="header__menu-item header__menu-item-right"><a class="header__menu-link" href="hotels.html">Гостиницы</a></li>
+            <li class="header__menu-item"><a class="header__menu-link" href="">Информация</a></li>
+            <li class="header__menu-item header__menu-item--center"><a class="header__menu-link" href="">Фото и видео</a></li>
+            <li class="header__menu-item header__menu-item--center header__menu-item--align-right"><a class="header__menu-link" href="">Карта штата</a></li>
+            <li class="header__menu-item header__menu-item--align-right "><a class="header__menu-link header__menu-link--active" href="hotels.html">Гостиницы</a></li>
           </ul>
           <a class="header__logo-link" href="index.html" aria-label="Логотип сайта"><img src="img/logo.svg" width="140" height="71" alt="Логотип сайта">
           </a>
@@ -31,7 +29,7 @@
               <fieldset class="form-options-field">
                 <legend class="form-options">Инфраструктура:</legend>
                 <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="infra1" id="infra1" checked>
-                <label for="infra1" tabindex="0">Бассейны</label>
+                <label for="infra1">Бассейны</label>
                 <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="infra2" id="infra2">
                 <label for="infra2">Парковка</label>
                 <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="infra3" id="infra3">
@@ -42,9 +40,9 @@
                 <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="placement1" id="placement1" checked disabled>
                 <label for="placement1">Гостиница</label>
                 <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="placement2" id="placement2" checked>
-                <label for="placement2" tabindex="0">Мотель</label>
+                <label for="placement2">Мотель</label>
                 <input class="visually-hidden form-options-checkbox input__checkbox input" type="checkbox" name="placement3" id="placement3" checked>
-                <label for="placement3" tabindex="0">Апартаменты</label>
+                <label for="placement3">Апартаменты</label>
               </fieldset>
             </div>
             <div class="searching__form-range">
@@ -180,6 +178,5 @@
         </div>
       </footer>
     </div>
-    <script src="js/script.js"></script>
   </body>
 </html>
