@@ -1122,7 +1122,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 426px;
 }
 
 .hotels__results-list-block img {
